@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zeeshan.assignment03.MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="Attendance System"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:textSize="15dp"
+        android:gravity="center"
+        android:text="Check in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <DatePicker
+
+        android:id="@+id/datePickerId"
+        android:layout_width="265dp"
+        android:layout_height="195dp"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:text="Check In" />
+    <TimePicker
+
+        android:layout_width="268dp"
+        android:layout_height="197dp"
+        android:layout_gravity="center"
+        android:calendarViewShown="false"
+        android:id="@+id/timePickerId"
+        android:paddingTop="20dp"
+        android:timePickerMode="spinner" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/saveAttendance"
+            android:text="Save attendance"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/ViewAttendance"
+            android:text="View Attendance log"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <Button
+        android:text="Check Out"
+        android:enabled="false"
+        android:id="@+id/checkOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    
+
+
+
+
+</LinearLayout>
